@@ -10609,3 +10609,131 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 14:28:25.552
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vSTvrcKv => OK
+!SESSION 2019-10-04 16:53:44.983 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2019-10-04 16:54:19.504
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-04 16:54:19.504
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4e8b36af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d164938,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:24.706
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:24.708
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3d7ccee[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1042)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:24.713
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:24.772
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-04 16:54:26.034
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\jeff_laptop'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-10-04 16:54:26.036
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org. ; version: 2.0.7.v20180504-0806
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.283
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pEwUsdqp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.287
+!MESSAGE subscribing to classpath changes: sts4.classpath.pEwUsdqp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.294
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.297
+!MESSAGE subsribers = [sts4.classpath.pEwUsdqp]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.299
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.305
+!MESSAGE project backend_tomcat ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.310
+!MESSAGE project backend ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.312
+!MESSAGE Preparing classpath changed notification backend_tomcat
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.313
+!MESSAGE project backend SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.315
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.318
+!MESSAGE project sharebook ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.332
+!MESSAGE project sharebook SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.341
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.342
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.344
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pEwUsdqp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.346
+!MESSAGE executing callback sts4.classpath.pEwUsdqp backend_tomcat false 99
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 16:54:29.458
+!MESSAGE executing callback sts4.classpath.pEwUsdqp SUCCESS [done]
