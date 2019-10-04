@@ -1,0 +1,23 @@
+spring.jpa.show-sql=true
+spring.h2.console.enabled=true
+
+# ===============================
+# DATABASE
+# ===============================
+ 
+
+spring.datasource.url=jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=root
+ 
+# ===============================
+# JPA / HIBERNATE
+# spring.jpa.hibernate.ddl-auto=update strategy si l'on veux faire des update, create si l'on ne veux pas d'update on re crér un table (est donc on efface l'acienne, utiliser en dev pour mieux verifier)  attention au espace apres les values create_
+# spring.jpa.show-sql=True si l'on veux due Hibernate affiche ses requettes
+#===============================
+
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+
+

@@ -1,0 +1,15 @@
+package com.work.sharebook.user;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.work.sharebook.loan.Loan;
+
+@Repository
+public interface UserRepository extends CrudRepository<User, Integer>{
+	
+	List<User> findByEmail(String email);
+
+}

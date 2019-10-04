@@ -1,0 +1,5 @@
+package com.work.sharebook.book;
+
+public interface BookRepository {
+
+}

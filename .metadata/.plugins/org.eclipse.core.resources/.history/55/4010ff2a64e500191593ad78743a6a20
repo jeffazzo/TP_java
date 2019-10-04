@@ -1,0 +1,5 @@
+package com.work.sharebook.user;
+
+public interface UserRepository {
+
+}

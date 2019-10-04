@@ -1,0 +1,41 @@
+package com.work.sharebook.loan;
+
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LoanController {
+	
+	@GetMapping(value = "/users/{userId}/loans")
+	public List<Loan> getLoans(@PathVariable("userId") String userId){
+		Loan loan = new Loan();
+		loan.setAskDate(new Date());
+		return Arrays.asList(loan);
+	}
+	
+	// creer un emprunt
+	@PostMapping(value = "/users/{userId}/loans/{bookId}")
+	@ResponseStatus(value = HttpStatus.CREATED)
+	public Loan createLoan(@PathVariable("userId") String userId,
+						   @PathVariable("bookId") String bookId) {
+		// todo to implement
+		Loan loan = new Loan();
+		loan.setAskDate(new Date());
+		return loan;
+	}
+	
+	// csuprimer un emprunt
+	@PostMapping(value = "/loans/{loanId}")
+	@ResponseStatus(value = HttpStatus.NO_CONTENT)
+	public void deleteLoan(@PathVariable("loanId") String loanId) {
+		// todo to implement
+	}
+}

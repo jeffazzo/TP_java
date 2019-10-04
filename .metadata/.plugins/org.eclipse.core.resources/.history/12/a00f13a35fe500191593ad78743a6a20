@@ -1,0 +1,5 @@
+package com.work.sharebook.loan;
+
+public class LoanRepository {
+
+}
